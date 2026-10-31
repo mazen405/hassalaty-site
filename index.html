@@ -33,7 +33,7 @@ ol{margin:0;padding:0 22px}
 .inapp a.tgb2{background:#1B8FD0;border-color:#1B8FD0;color:#fff}
 .hint2{color:var(--mut);font-size:13px;margin-top:8px}
 footer{margin-top:30px;color:var(--mut);font-size:13px}
-:root[data-theme=light]{color-scheme:light;--bg:#f4f8f6;--card:#ffffff;--line:#d5e4dd;--brand:#0d8f6f;--gold:#9a6a00;--tx:#14231d;--mut:#5a6f66;--glow:#d9efe6;--ph1:#3a4a43;--ph2:#101a16;--phr:#5d6f66;--tgl:#0a6fa3}
+:root[data-theme=light]{color-scheme:light;--bg:#e4ebe5;--card:#eef3ee;--line:#c3d3c9;--brand:#0d8f6f;--gold:#8a5f00;--tx:#1d2b25;--mut:#5d7066;--glow:#d3e3d9;--ph1:#3a4a43;--ph2:#101a16;--phr:#5d6f66;--tgl:#0a6fa3}
 body{background:radial-gradient(900px 500px at 50% -10%,var(--glow) 0,var(--bg) 60%)}
 .ph{background:linear-gradient(160deg,var(--ph1),var(--ph2));box-shadow:0 18px 40px -14px rgba(0,0,0,.45),inset 0 0 0 1.5px var(--phr)}
 .tg{color:var(--tgl)}
@@ -44,8 +44,12 @@ body{background:radial-gradient(900px 500px at 50% -10%,var(--glow) 0,var(--bg) 
 .theme svg{width:22px;height:22px}
 .theme .sun{display:none}
 :root[data-theme=light] .theme .sun{display:block}:root[data-theme=light] .theme .moon{display:none}
-</style></head><script>(function(){var m='dark';try{m=localStorage.getItem('hs_theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}catch(e){}document.documentElement.setAttribute('data-theme',m)})()</script>
-<body><button class="theme" id="theme" type="button" aria-label="تبديل الوضع الداكن والفاتح"><svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button><main>
+.art{position:fixed;top:0;bottom:0;width:min(46vw,300px);background:var(--brand);opacity:.13;-webkit-mask:url(art.webp) no-repeat center/contain;mask:url(art.webp) no-repeat center/contain;pointer-events:none;z-index:0}
+.art.a1{inset-inline-start:-8vw}.art.a2{inset-inline-end:-8vw;transform:scaleX(-1)}
+:root[data-theme=light] .art{opacity:.09}
+main{position:relative;z-index:1}
+</style></head><script>(function(){var m='dark';try{m=localStorage.getItem('hs_theme')||'dark'}catch(e){}document.documentElement.setAttribute('data-theme',m)})()</script>
+<body><button class="theme" id="theme" type="button" aria-label="تبديل الوضع الداكن والفاتح"><svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button><div class="art a1" aria-hidden="true"></div><div class="art a2" aria-hidden="true"></div><main>
 <svg class="lan" viewBox="0 0 220 224" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8A5A08"/><stop offset=".3" stop-color="#FFE9A6"/><stop offset=".55" stop-color="#F0B42E"/><stop offset="1" stop-color="#8A5A08"/></linearGradient></defs>
 <circle cx="110" cy="22" r="11" fill="none" stroke="url(#g)" stroke-width="6"/><path d="M52 78Q60 40 110 40T168 78Z" fill="url(#g)"/><rect x="50" y="76" width="120" height="12" rx="4" fill="url(#g)"/>
 <path d="M58 88Q30 130 66 176H154Q190 130 162 88Z" fill="#cfe9ff" fill-opacity=".22" stroke="url(#g)" stroke-width="5"/><path d="M66 150Q110 128 154 150L154 176H66Z" fill="#E7B63A"/><rect x="52" y="176" width="116" height="16" rx="5" fill="url(#g)"/></svg>
@@ -54,10 +58,10 @@ body{background:radial-gradient(900px 500px at 50% -10%,var(--glow) 0,var(--bg) 
 <a class="btn" id="dl" href="hassalaty.apk" download>تحميل مباشر (APK)</a>
 <div style="margin-top:14px"><a class="btn tgb" href="https://t.me/hassalaty">التحميل من تلجرام</a></div>
 <div class="inapp" id="inapp"><h3>افتح الموقع في متصفح عادي</h3>
-<div>يُمنع التحميل داخل متصفحات التطبيقات (X وتلجرام وفيسبوك وغيرها).</div>
+<div>بعض التطبيقات، مثل X، قد تمنع التحميل أحيانًا من متصفحها الداخلي، بينما لا تمنعه تطبيقات أخرى. إن لم يبدأ التحميل فجرّب الخطوات التالية.</div>
 <ol><li>اضغط على النقاط الثلاث (⋮) في الأعلى.</li><li>اختار <b>«فتح في المتصفح»</b>.</li><li>اضغط «تحميل مباشر».</li></ol>
 <div class="row"><a id="chrome" href="#">افتح في Chrome</a><button id="copy" type="button">نسخ الرابط</button></div>
-<div class="hint2">إن لم يعمل، الصق الرابط في Chrome، أو نزّل من تلجرام:</div>
+<div class="hint2" id="cpmsg">إن لم يُفتح Chrome (قد يمنعه التطبيق الذي تتصفح منه)، الصق الرابط في Chrome، أو نزّل من تلجرام:</div>
 <div class="row"><a class="tgb2" href="https://t.me/hassalaty">التحميل من تلجرام</a></div></div>
 <div class="meta" id="meta">الإصدار 2.0 · للأندرويد فقط</div>
 <div class="card" style="padding-inline:0;overflow:hidden"><h2 style="padding-inline:20px">صور من التطبيق</h2><div class="shots">
@@ -103,7 +107,12 @@ fetch('hassalaty.apk',{method:'HEAD'}).then(function(r){
  var url=location.href.split('#')[0];
  if(inapp){document.getElementById('inapp').style.display='block'}
  var c=document.getElementById('chrome');
- c.href='intent://'+url.replace(/^https?:\/\//,'')+'#Intent;scheme=https;package=com.android.chrome;end';
+ c.href='intent://'+url.replace(/^https?:\/\//,'')+'#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url='+encodeURIComponent(url)+';end';
+ document.getElementById('chrome').addEventListener('click',function(){
+  var m=document.getElementById('cpmsg');
+  setTimeout(function(){if(document.visibilityState==='visible'){
+   try{navigator.clipboard.writeText(url)}catch(e){}
+   m.innerHTML='لم يُفتح Chrome لأن التطبيق منعه. <b>تم نسخ الرابط</b>: افتح Chrome يدويًا والصقه في شريط العنوان، أو نزّل من تلجرام.';m.style.color='var(--gold)'}},1400)});
  document.getElementById('copy').onclick=function(){var b=this;
   function ok(){b.textContent='تم النسخ'}
   if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(ok,function(){prompt('انسخ الرابط',url)})}
