@@ -4,7 +4,7 @@
 <title>حصّالتي - تحميل التطبيق</title>
 <meta name="description" content="حصّالتي: تطبيق ادخار بسيط يعمل بدون إنترنت وبياناتك على جهازك فقط.">
 <style>
-:root{--bg:#07110E;--card:#0e1d18;--line:#1e3a30;--brand:#17a883;--gold:#F4C03E;--tx:#eef6f2;--mut:#9db5ab}
+:root{color-scheme:dark;--glow:#12382d;--ph1:#2b3d36;--ph2:#0b1512;--phr:#3d5249;--tgl:#7fd8ff;--bg:#07110E;--card:#0e1d18;--line:#1e3a30;--brand:#17a883;--gold:#F4C03E;--tx:#eef6f2;--mut:#9db5ab}
 *{box-sizing:border-box}
 body{margin:0;background:radial-gradient(900px 500px at 50% -10%,#12382d 0,var(--bg) 60%);color:var(--tx);font-family:"Noto Sans Arabic","Tajawal",system-ui,sans-serif;line-height:1.8;min-height:100vh}
 main{max-width:640px;margin:0 auto;padding:36px 20px 60px;text-align:center}
@@ -33,19 +33,31 @@ ol{margin:0;padding:0 22px}
 .inapp a.tgb2{background:#1B8FD0;border-color:#1B8FD0;color:#fff}
 .hint2{color:var(--mut);font-size:13px;margin-top:8px}
 footer{margin-top:30px;color:var(--mut);font-size:13px}
-</style></head><body><main>
+:root[data-theme=light]{color-scheme:light;--bg:#f4f8f6;--card:#ffffff;--line:#d5e4dd;--brand:#0d8f6f;--gold:#9a6a00;--tx:#14231d;--mut:#5a6f66;--glow:#d9efe6;--ph1:#3a4a43;--ph2:#101a16;--phr:#5d6f66;--tgl:#0a6fa3}
+body{background:radial-gradient(900px 500px at 50% -10%,var(--glow) 0,var(--bg) 60%)}
+.ph{background:linear-gradient(160deg,var(--ph1),var(--ph2));box-shadow:0 18px 40px -14px rgba(0,0,0,.45),inset 0 0 0 1.5px var(--phr)}
+.tg{color:var(--tgl)}
+:root[data-theme=light] .inapp{background:#fff4d6;border-color:#e0b64a;color:#5a4000}
+:root[data-theme=light] .inapp button,:root[data-theme=light] .inapp a{background:#fde7a8;border-color:#d9a92e;color:#5a4000}
+:root[data-theme=light] .inapp a.tgb2{background:#1B8FD0;color:#fff}
+.theme{position:fixed;top:14px;inset-inline-start:14px;z-index:5;width:42px;height:42px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--tx);cursor:pointer;display:grid;place-items:center;padding:0}
+.theme svg{width:22px;height:22px}
+.theme .sun{display:none}
+:root[data-theme=light] .theme .sun{display:block}:root[data-theme=light] .theme .moon{display:none}
+</style></head><script>(function(){var m='dark';try{m=localStorage.getItem('hs_theme')||(matchMedia('(prefers-color-scheme: light)').matches?'light':'dark')}catch(e){}document.documentElement.setAttribute('data-theme',m)})()</script>
+<body><button class="theme" id="theme" type="button" aria-label="تبديل الوضع الداكن والفاتح"><svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button><main>
 <svg class="lan" viewBox="0 0 220 224" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8A5A08"/><stop offset=".3" stop-color="#FFE9A6"/><stop offset=".55" stop-color="#F0B42E"/><stop offset="1" stop-color="#8A5A08"/></linearGradient></defs>
 <circle cx="110" cy="22" r="11" fill="none" stroke="url(#g)" stroke-width="6"/><path d="M52 78Q60 40 110 40T168 78Z" fill="url(#g)"/><rect x="50" y="76" width="120" height="12" rx="4" fill="url(#g)"/>
 <path d="M58 88Q30 130 66 176H154Q190 130 162 88Z" fill="#cfe9ff" fill-opacity=".22" stroke="url(#g)" stroke-width="5"/><path d="M66 150Q110 128 154 150L154 176H66Z" fill="#E7B63A"/><rect x="52" y="176" width="116" height="16" rx="5" fill="url(#g)"/></svg>
 <h1>حصّالتي</h1>
-<p class="sub">تطبيق ادخار بسيط على الأندرويد. بدون حسابات، بدون إعلانات، وبياناتك على جهازك فقط.</p>
+<p class="sub">تطبيق ادخار بسيط لأندرويد. دون حسابات ودون إعلانات، وبياناتك على جهازك فقط.</p>
 <a class="btn" id="dl" href="hassalaty.apk" download>تحميل مباشر (APK)</a>
 <div style="margin-top:14px"><a class="btn tgb" href="https://t.me/hassalaty">التحميل من تلجرام</a></div>
 <div class="inapp" id="inapp"><h3>افتح الموقع في متصفح عادي</h3>
-<div>التحميل بيتمنع جوه متصفح أي تطبيق (X وتلجرام وفيسبوك وغيرهم).</div>
-<ol><li>دوس على النقط الثلاث (⋮) فوق.</li><li>اختار <b>«فتح في المتصفح»</b>.</li><li>دوس «تحميل مباشر».</li></ol>
+<div>يُمنع التحميل داخل متصفحات التطبيقات (X وتلجرام وفيسبوك وغيرها).</div>
+<ol><li>اضغط على النقاط الثلاث (⋮) في الأعلى.</li><li>اختار <b>«فتح في المتصفح»</b>.</li><li>اضغط «تحميل مباشر».</li></ol>
 <div class="row"><a id="chrome" href="#">افتح في Chrome</a><button id="copy" type="button">نسخ الرابط</button></div>
-<div class="hint2">لو ما اشتغلش، الصق الرابط في Chrome، أو نزّل من تلجرام:</div>
+<div class="hint2">إن لم يعمل، الصق الرابط في Chrome، أو نزّل من تلجرام:</div>
 <div class="row"><a class="tgb2" href="https://t.me/hassalaty">التحميل من تلجرام</a></div></div>
 <div class="meta" id="meta">للأندرويد فقط</div>
 <div class="card" style="padding-inline:0;overflow:hidden"><h2 style="padding-inline:20px">صور من التطبيق</h2><div class="shots">
@@ -56,27 +68,28 @@ footer{margin-top:30px;color:var(--mut);font-size:13px}
 <figure><div class="ph"><img src="shot5.webp" alt="الصدقة" loading="lazy"></div><figcaption>سجّل صدقتك وتابعها</figcaption></figure>
 <figure><div class="ph"><img src="shot6.webp" alt="الإعدادات" loading="lazy"></div><figcaption>عربي وإنجليزي وإعدادات كاملة</figcaption></figure>
 </div></div>
-<div class="card" style="margin-top:18px"><h2>لو الملف نزل ومفتحش؟</h2><ul><li>اقفل الصفحة وافتح متصفح <b>Chrome</b>.</li><li>اختار <b>التنزيلات</b> (Downloads) من القايمة.</li><li>دوس على ملف <b>hassalaty.apk</b> وكمّل التثبيت.</li></ul></div>
+<div class="card" style="margin-top:18px"><h2>إذا تم التنزيل ولم يُفتح الملف؟</h2><ul><li>أغلق الصفحة وافتح متصفح <b>Chrome</b>.</li><li>اختر <b>التنزيلات</b> (Downloads) من القائمة.</li><li>اضغط على ملف <b>hassalaty.apk</b> وأكمل التثبيت.</li></ul></div>
 <div class="card"><h2>المميزات</h2><ul>
-<li>فانوس ادخار يمتلئ بالعملات كل ما رصيدك يزيد</li>
-<li>أهداف وحصّالات متعددة وتحدّيات ادخار</li>
+<li>فانوس ادخار يمتلئ بالعملات كلما زاد رصيدك</li>
+<li>أهداف وحصّالات متعددة وتحديات ادخار</li>
 <li>ميزانيات وإحصائيات وبطاقة ملخّص الشهر</li>
 <li>أذكار وصدقة وحاسبة زكاة</li>
-<li>رقم سري وبصمة إصبع، ونسخة احتياطية</li>
-<li>عربي وإنجليزي، ويعمل بدون إنترنت</li></ul></div>
-<div class="card" id="tip"><h2>لو الملف نزل وما اتثبّتش؟</h2><ol>
-<li>اخرج من المتصفح وارجع له.</li><li>افتح <b>التنزيلات</b> من قائمة المتصفح (⋮).</li><li>دوس على ملف <b>hassalaty.apk</b>، ثم <b>تثبيت</b>.</li></ol>
-<p style="color:var(--mut);font-size:14px;margin:8px 0 0">لو ظهرت رسالة، اسمح بالتثبيت من هذا المصدر.</p></div>
+<li>رمز سري وبصمة إصبع، ونسخة احتياطية</li>
+<li>عربي وإنجليزي، ويعمل دون إنترنت</li></ul></div>
+<div class="card" id="tip"><h2>إذا تم التنزيل ولم يكتمل التثبيت؟</h2><ol>
+<li>اخرج من المتصفح ثم ارجع إليه.</li><li>افتح <b>التنزيلات</b> من قائمة المتصفح (⋮).</li><li>اضغط على ملف <b>hassalaty.apk</b> ثم <b>تثبيت</b>.</li></ol>
+<p style="color:var(--mut);font-size:14px;margin:8px 0 0">إن ظهرت رسالة، فاسمح بالتثبيت من هذا المصدر.</p></div>
 <div class="card"><h2>طريقة التثبيت</h2><ol>
 <li>اضغط زر التحميل وانتظر انتهاء تنزيل الملف.</li>
-<li>افتح الملف، ولو ظهرت رسالة، اسمح بالتثبيت من هذا المصدر.</li>
+<li>افتح الملف، وإن ظهرت رسالة، فاسمح بالتثبيت من هذا المصدر.</li>
 <li>اضغط تثبيت ثم افتح التطبيق.</li></ol>
-<p style="color:var(--mut);font-size:14px;margin:10px 0 0">عند التحديث، ثبّت النسخة الجديدة فوق القديمة، واعمل «تصدير نسخة احتياطية» من الإعدادات قبلها.</p></div>
-<div class="card"><h2>الدعم</h2><div>للملاحظات والإبلاغ عن مشكلة، انضم لجروب التلجرام.</div>
-<a class="tg" href="https://t.me/hassalaty" id="tg">جروب حصّالتي على تلجرام</a><br><a class="tg" href="https://x.com/MazenTechX" id="x">تابعني على X</a></div>
+<p style="color:var(--mut);font-size:14px;margin:10px 0 0">عند التحديث، ثبّت النسخة الجديدة فوق القديمة، وأنشئ نسخة احتياطية من الإعدادات قبل ذلك.</p></div>
+<div class="card"><h2>الدعم</h2><div>للملاحظات أو الإبلاغ عن مشكلة، انضم إلى مجموعة تلجرام.</div>
+<a class="tg" href="https://t.me/hassalaty" id="tg">مجموعة حصّالتي على تلجرام</a><br><a class="tg" href="https://x.com/MazenTechX" id="x">تابعني على X</a></div>
 <footer>طُوِّر بواسطة Mazen · <a href="https://x.com/MazenTechX" style="color:inherit">X</a></footer>
 </main>
 <script>
+document.getElementById('theme').onclick=function(){var d=document.documentElement,n=d.getAttribute('data-theme')==='light'?'dark':'light';d.setAttribute('data-theme',n);try{localStorage.setItem('hs_theme',n)}catch(e){}};
 fetch('hassalaty.apk',{method:'HEAD'}).then(function(r){
  if(!r.ok)return;var s=r.headers.get('content-length'),m=r.headers.get('last-modified'),p=[];
  if(m)p.push('آخر تحديث: '+new Date(m).toLocaleDateString('ar-EG',{year:'numeric',month:'long',day:'numeric'}));
