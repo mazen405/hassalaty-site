@@ -59,7 +59,7 @@ body{background:radial-gradient(900px 500px at 50% -10%,var(--glow) 0,var(--bg) 
 <div class="row"><a id="chrome" href="#">افتح في Chrome</a><button id="copy" type="button">نسخ الرابط</button></div>
 <div class="hint2">إن لم يعمل، الصق الرابط في Chrome، أو نزّل من تلجرام:</div>
 <div class="row"><a class="tgb2" href="https://t.me/hassalaty">التحميل من تلجرام</a></div></div>
-<div class="meta" id="meta">للأندرويد فقط</div>
+<div class="meta" id="meta">الإصدار 2.0 · للأندرويد فقط</div>
 <div class="card" style="padding-inline:0;overflow:hidden"><h2 style="padding-inline:20px">صور من التطبيق</h2><div class="shots">
 <figure><div class="ph"><img src="shot1.webp" alt="الرئيسية" loading="lazy"></div><figcaption>فانوس ادخار يمتلئ بالعملات</figcaption></figure>
 <figure><div class="ph"><img src="shot2.webp" alt="إضافة مبلغ" loading="lazy"></div><figcaption>أضف مبلغك في ثوانٍ</figcaption></figure>
@@ -86,12 +86,12 @@ body{background:radial-gradient(900px 500px at 50% -10%,var(--glow) 0,var(--bg) 
 <p style="color:var(--mut);font-size:14px;margin:10px 0 0">عند التحديث، ثبّت النسخة الجديدة فوق القديمة، وأنشئ نسخة احتياطية من الإعدادات قبل ذلك.</p></div>
 <div class="card"><h2>الدعم</h2><div>للملاحظات أو الإبلاغ عن مشكلة، انضم إلى مجموعة تلجرام.</div>
 <a class="tg" href="https://t.me/hassalaty" id="tg">مجموعة حصّالتي على تلجرام</a><br><a class="tg" href="https://x.com/MazenTechX" id="x">تابعني على X</a></div>
-<footer>طُوِّر بواسطة Mazen · <a href="https://x.com/MazenTechX" style="color:inherit">X</a></footer>
+<footer>طُوِّر بواسطة Mazen</footer>
 </main>
 <script>
 document.getElementById('theme').onclick=function(){var d=document.documentElement,n=d.getAttribute('data-theme')==='light'?'dark':'light';d.setAttribute('data-theme',n);try{localStorage.setItem('hs_theme',n)}catch(e){}};
 fetch('hassalaty.apk',{method:'HEAD'}).then(function(r){
- if(!r.ok)return;var s=r.headers.get('content-length'),m=r.headers.get('last-modified'),p=[];
+ if(!r.ok)return;var s=r.headers.get('content-length'),m=r.headers.get('last-modified'),p=['الإصدار 2.0'];
  if(m)p.push('آخر تحديث: '+new Date(m).toLocaleDateString('ar-EG',{year:'numeric',month:'long',day:'numeric'}));
  if(s)p.push('الحجم: '+(s/1048576).toFixed(1)+' ميجا');
  if(p.length)document.getElementById('meta').textContent=p.join(' · ');
