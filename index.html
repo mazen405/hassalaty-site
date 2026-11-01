@@ -48,6 +48,15 @@ body{background:radial-gradient(900px 500px at 50% -10%,var(--glow) 0,var(--bg) 
 .art.a1{inset-inline-start:-8vw}.art.a2{inset-inline-end:-8vw;transform:scaleX(-1)}
 :root[data-theme=light] .art{opacity:.09}
 main{position:relative;z-index:1}
+.wn-btn{margin-top:8px;background:none;border:0;color:var(--brand);font:700 14px inherit;font-family:inherit;text-decoration:underline;text-underline-offset:4px;cursor:pointer;padding:6px 10px}
+.wn-ov{position:fixed;inset:0;z-index:50;background:rgba(0,0,0,.55);display:flex;align-items:center;justify-content:center;padding:18px}
+.wn-ov[hidden]{display:none}
+.wn-card{position:relative;width:100%;max-width:460px;max-height:86vh;overflow:auto;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:22px 22px 18px;text-align:start;box-shadow:0 30px 60px -20px rgba(0,0,0,.5)}
+.wn-card h2{margin:0 0 12px;font-size:19px;color:var(--gold);padding-inline-end:44px}
+.wn-card ul{padding:0 20px;margin:0}.wn-card li{margin:6px 0;font-size:15px}
+.wn-n{color:var(--mut);font-size:13.5px;margin:14px 0 0;border-top:1px solid var(--line);padding-top:12px}
+.wn-x{position:absolute;top:14px;inset-inline-end:14px;width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:transparent;color:var(--mut);display:grid;place-items:center;padding:0;cursor:pointer}
+.wn-x svg{width:17px;height:17px}
 </style></head><script>(function(){var m='dark';try{m=localStorage.getItem('hs_theme')||'dark'}catch(e){}document.documentElement.setAttribute('data-theme',m)})()</script>
 <body><button class="theme" id="theme" type="button" aria-label="تبديل الوضع الداكن والفاتح"><svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button><div class="art a1" aria-hidden="true"></div><div class="art a2" aria-hidden="true"></div><main>
 <svg class="lan" viewBox="0 0 220 224" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8A5A08"/><stop offset=".3" stop-color="#FFE9A6"/><stop offset=".55" stop-color="#F0B42E"/><stop offset="1" stop-color="#8A5A08"/></linearGradient></defs>
@@ -56,20 +65,22 @@ main{position:relative;z-index:1}
 <h1>حصّالتي</h1>
 <p class="sub">تطبيق ادخار بسيط لأندرويد. دون حسابات ودون إعلانات، وبياناتك على جهازك فقط.</p>
 <a class="btn" id="dl" href="hassalaty.apk" download>تحميل مباشر (APK)</a>
-<div style="margin-top:14px"><a class="btn tgb" href="https://t.me/hassalaty">التحميل من تلجرام</a></div>
+<div class="meta" style="margin-top:10px;font-size:13px;line-height:1.7" id="meta">الإصدار 2.1 · للأندرويد فقط</div>
+<button class="wn-btn" id="wn" type="button">تفاصيل التحديث</button>
+<div style="margin-top:8px"><a class="btn tgb" href="https://t.me/hassalaty">التحميل من تلجرام</a></div>
 <div class="inapp" id="inapp"><h3>افتح الموقع في متصفح عادي</h3>
 <div>بعض التطبيقات، مثل X، قد تمنع التحميل أحيانًا من متصفحها الداخلي، بينما لا تمنعه تطبيقات أخرى. إن لم يبدأ التحميل فجرّب الخطوات التالية.</div>
 <ol><li>اضغط على النقاط الثلاث (⋮) في الأعلى.</li><li>اختار <b>«فتح في المتصفح»</b>.</li><li>اضغط «تحميل مباشر».</li></ol>
 <div class="row"><a id="chrome" href="#">افتح في Chrome</a><button id="copy" type="button">نسخ الرابط</button></div>
 <div class="hint2" id="cpmsg">إن لم يُفتح Chrome (قد يمنعه التطبيق الذي تتصفح منه)، الصق الرابط في Chrome، أو نزّل من تلجرام:</div>
 <div class="row"><a class="tgb2" href="https://t.me/hassalaty">التحميل من تلجرام</a></div></div>
-<div class="meta" id="meta">الإصدار 2.0 · للأندرويد فقط</div>
+
 <div class="card" style="padding-inline:0;overflow:hidden"><h2 style="padding-inline:20px">صور من التطبيق</h2><div class="shots">
 <figure><div class="ph"><img src="shot1.webp" alt="الرئيسية" loading="lazy"></div><figcaption>فانوس ادخار يمتلئ بالعملات</figcaption></figure>
 <figure><div class="ph"><img src="shot2.webp" alt="إضافة مبلغ" loading="lazy"></div><figcaption>أضف مبلغك في ثوانٍ</figcaption></figure>
-<figure><div class="ph"><img src="shot3.webp" alt="سجل العمليات" loading="lazy"></div><figcaption>سجل كامل لعملياتك</figcaption></figure>
-<figure><div class="ph"><img src="shot4.webp" alt="الإحصائيات" loading="lazy"></div><figcaption>إنجازات وإحصائيات</figcaption></figure>
-<figure><div class="ph"><img src="shot5.webp" alt="الصدقة" loading="lazy"></div><figcaption>سجّل صدقتك وتابعها</figcaption></figure>
+<figure><div class="ph"><img src="shot3.webp" alt="سجل العمليات" loading="lazy"></div><figcaption>سجل أنيق لعملياتك</figcaption></figure>
+<figure><div class="ph"><img src="shot4.webp" alt="الإنجازات" loading="lazy"></div><figcaption>إنجازات على شكل ميداليات</figcaption></figure>
+<figure><div class="ph"><img src="shot5.webp" alt="الحاسبة" loading="lazy"></div><figcaption>آلة حاسبة مدمجة وأنيقة</figcaption></figure>
 <figure><div class="ph"><img src="shot6.webp" alt="الإعدادات" loading="lazy"></div><figcaption>عربي وإنجليزي وإعدادات كاملة</figcaption></figure>
 </div></div>
 <div class="card" style="margin-top:18px"><h2>إذا تم التنزيل ولم يُفتح الملف؟</h2><ul><li>أغلق الصفحة وافتح متصفح <b>Chrome</b>.</li><li>اختر <b>التنزيلات</b> (Downloads) من القائمة.</li><li>اضغط على ملف <b>hassalaty.apk</b> وأكمل التثبيت.</li></ul></div>
@@ -90,13 +101,32 @@ main{position:relative;z-index:1}
 <p style="color:var(--mut);font-size:14px;margin:10px 0 0">عند التحديث، ثبّت النسخة الجديدة فوق القديمة، وأنشئ نسخة احتياطية من الإعدادات قبل ذلك.</p></div>
 <div class="card"><h2>الدعم</h2><div>للملاحظات أو الإبلاغ عن مشكلة، انضم إلى مجموعة تلجرام.</div>
 <a class="tg" href="https://t.me/hassalaty" id="tg">مجموعة حصّالتي على تلجرام</a><br><a class="tg" href="https://x.com/MazenTechX" id="x">تابعني على X</a></div>
+<div class="wn-ov" id="wnov" hidden role="dialog" aria-modal="true" aria-labelledby="wnt"><div class="wn-card"><button class="wn-x" id="wnx" type="button" aria-label="إغلاق"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+<h2 id="wnt">ما الجديد في الإصدار 2.1</h2>
+<ul>
+<li>شاشة ترحيب تطلب اسمك، وتحية باسمك أعلى الشاشة الرئيسية</li>
+<li>عملات حقيقية داخل الفانوس تتحرك وتتكوّم فوق بعضها</li>
+<li>زر الحاسبة يختبئ على الجانب بعد ثوانٍ، ويظهر عند لمسه</li>
+<li>تصميم جديد وأنيق للآلة الحاسبة</li>
+<li>زر إغلاق (X) في كل نافذة وصفحة</li>
+<li>حركة رجوع جديدة وسلسة</li>
+<li>سجل العمليات بتصميم جديد، وأزرار سحب أجمل للتعديل والحذف</li>
+<li>الإنجازات على شكل ميداليات مع عدّاد للتقدّم</li>
+<li>الوضع الفاتح بلون هادئ أريح للعين</li>
+<li>شريط الصلاة على النبي بخط أجمل</li>
+<li>تحسينات عامة على شكل الكروت والأزرار والإعدادات</li>
+<li>واجهة بالعربية الفصحى وجولة تعريفية أقصر وأسرع</li>
+</ul>
+<p class="wn-n">عند التحديث، ثبّت النسخة الجديدة فوق القديمة، وأنشئ نسخة احتياطية من الإعدادات قبل ذلك.</p></div></div>
 <footer>طُوِّر بواسطة Mazen</footer>
 </main>
 <script>
+(function(){var o=document.getElementById('wnov');function op(){o.hidden=false;document.body.style.overflow='hidden';document.getElementById('theme').style.visibility='hidden'}function cl(){o.hidden=true;document.body.style.overflow='';document.getElementById('theme').style.visibility=''}
+document.getElementById('wn').onclick=op;document.getElementById('wnx').onclick=cl;o.addEventListener('click',function(e){if(e.target===o)cl()});document.addEventListener('keydown',function(e){if(e.key==='Escape')cl()})})();
 document.getElementById('theme').onclick=function(){var d=document.documentElement,n=d.getAttribute('data-theme')==='light'?'dark':'light';d.setAttribute('data-theme',n);try{localStorage.setItem('hs_theme',n)}catch(e){}};
 fetch('hassalaty.apk',{method:'HEAD'}).then(function(r){
- if(!r.ok)return;var s=r.headers.get('content-length'),m=r.headers.get('last-modified'),p=['الإصدار 2.0'];
- if(m)p.push('آخر تحديث: '+new Date(m).toLocaleDateString('ar-EG',{year:'numeric',month:'long',day:'numeric'}));
+ if(!r.ok)return;var s=r.headers.get('content-length'),m=r.headers.get('last-modified'),p=['الإصدار 2.1'];
+ if(m){var dt=new Date(m);p.push('آخر تحديث: '+dt.toLocaleDateString('ar-EG',{year:'numeric',month:'long',day:'numeric'})+'، '+dt.toLocaleTimeString('ar-EG',{hour:'numeric',minute:'2-digit',hour12:true}))}
  if(s)p.push('الحجم: '+(s/1048576).toFixed(1)+' ميجا');
  if(p.length)document.getElementById('meta').textContent=p.join(' · ');
 }).catch(function(){});
