@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="ar" dir="rtl"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>حصّالتي - تحميل التطبيق</title>
+<title>حصّالتي</title>
 <meta name="description" content="حصّالتي: تطبيق ادخار بسيط يعمل بدون إنترنت وبياناتك على جهازك فقط.">
 <style>
 :root{color-scheme:dark;--glow:#12382d;--ph1:#2b3d36;--ph2:#0b1512;--phr:#3d5249;--tgl:#7fd8ff;--bg:#07110E;--card:#0e1d18;--line:#1e3a30;--brand:#17a883;--gold:#F4C03E;--tx:#eef6f2;--mut:#9db5ab}
@@ -33,6 +33,11 @@ ol{margin:0;padding:0 22px}
 .inapp a.tgb2{background:#1B8FD0;border-color:#1B8FD0;color:#fff}
 .hint2{color:var(--mut);font-size:13px;margin-top:8px}
 footer{margin-top:30px;color:var(--mut);font-size:13px}
+.ft{display:flex;flex-direction:column;align-items:center;gap:12px;padding:18px 0 6px;border-top:1px solid var(--line)}
+.fn{display:flex;gap:20px}.fn a{color:var(--mut);text-decoration:none;font-size:14px}.fn a:hover{color:var(--tx)}
+.fs{display:flex;gap:12px}.fs a{display:flex;width:34px;height:34px;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;color:var(--mut)}.fs a:hover{color:var(--tx)}.fs svg{width:16px;height:16px;fill:currentColor}.fd{font-size:13px;color:var(--mut)}
+.ft,.ft .fn,.ft .fs,.ft .fd{justify-content:center;text-align:center;align-self:center;width:100%}
+
 :root[data-theme=light]{color-scheme:light;--bg:#e4ebe5;--card:#eef3ee;--line:#c3d3c9;--brand:#0d8f6f;--gold:#8a5f00;--tx:#1d2b25;--mut:#5d7066;--glow:#d3e3d9;--ph1:#3a4a43;--ph2:#101a16;--phr:#5d6f66;--tgl:#0a6fa3}
 body{background:radial-gradient(900px 500px at 50% -10%,var(--glow) 0,var(--bg) 60%)}
 .ph{background:linear-gradient(160deg,var(--ph1),var(--ph2));box-shadow:0 18px 40px -14px rgba(0,0,0,.45),inset 0 0 0 1.5px var(--phr)}
@@ -85,6 +90,8 @@ h1::after{left:50%;margin-left:-20px}
 .sl{display:flex;align-items:center;justify-content:center;gap:9px;padding:14px 10px;margin:0;border-radius:16px;font-weight:800;font-size:15px;text-decoration:none;color:var(--tx);background:linear-gradient(180deg,color-mix(in srgb,var(--brand) 10%,transparent),transparent);border:1px solid var(--line)}
 .sl svg{width:20px;height:20px}
 .sl:first-child{color:var(--tgl);border-color:color-mix(in srgb,var(--tgl) 35%,transparent);background:color-mix(in srgb,var(--tgl) 10%,transparent)}
+.soon{display:inline-flex;align-items:center;gap:8px;margin:8px auto 0;padding:13px 26px;border-radius:99px;border:1px solid var(--line);background:var(--card);color:var(--mut);font-size:15px}.soon b{color:var(--tx);font-weight:800}
+h1+.sub+.soon{display:flex;width:max-content;max-width:100%}
 </style></head><script>(function(){var m='dark';try{m=localStorage.getItem('hs_theme')||'dark'}catch(e){}document.documentElement.setAttribute('data-theme',m)})()</script>
 <body><button class="theme" id="theme" type="button" aria-label="تبديل الوضع الداكن والفاتح"><svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg><svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg></button><div class="art a1" aria-hidden="true"></div><div class="art a2" aria-hidden="true"></div><main>
 <svg class="lan" viewBox="0 0 220 224" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8A5A08"/><stop offset=".3" stop-color="#FFE9A6"/><stop offset=".55" stop-color="#F0B42E"/><stop offset="1" stop-color="#8A5A08"/></linearGradient></defs>
@@ -92,16 +99,7 @@ h1::after{left:50%;margin-left:-20px}
 <path d="M58 88Q30 130 66 176H154Q190 130 162 88Z" fill="#cfe9ff" fill-opacity=".22" stroke="url(#g)" stroke-width="5"/><path d="M66 150Q110 128 154 150L154 176H66Z" fill="#E7B63A"/><rect x="52" y="176" width="116" height="16" rx="5" fill="url(#g)"/></svg>
 <h1>حصّالتي</h1>
 <p class="sub">تطبيق ادخار بسيط لأندرويد. دون حسابات ودون إعلانات، وبياناتك على جهازك فقط.</p>
-<a class="btn" id="dl" href="hassalaty.apk" download>تحميل مباشر (APK)</a>
-<div class="meta" style="margin-top:10px;font-size:13px;line-height:1.7" id="meta">الإصدار 2.1 · للأندرويد فقط</div>
-<button class="wn-btn" id="wn" type="button">تفاصيل التحديث</button>
-<div style="margin-top:8px"><a class="btn tgb" href="https://t.me/hassalaty">التحميل من تلجرام</a></div>
-<div class="inapp" id="inapp"><h3>افتح الموقع في متصفح عادي</h3>
-<div>بعض التطبيقات، مثل X، قد تمنع التحميل أحيانًا من متصفحها الداخلي، بينما لا تمنعه تطبيقات أخرى. إن لم يبدأ التحميل فجرّب الخطوات التالية.</div>
-<ol class="steps"><li>اضغط على النقاط الثلاث (⋮) في الأعلى.</li><li>اختار <b>«فتح في المتصفح»</b>.</li><li>اضغط «تحميل مباشر».</li></ol>
-<div class="row"><a id="chrome" href="#">افتح في Chrome</a><button id="copy" type="button">نسخ الرابط</button></div>
-<div class="hint2" id="cpmsg">إن لم يُفتح Chrome (قد يمنعه التطبيق الذي تتصفح منه)، الصق الرابط في Chrome، أو نزّل من تلجرام:</div>
-<div class="row"><a class="tgb2" href="https://t.me/hassalaty">التحميل من تلجرام</a></div></div>
+<div class="soon" role="note"><span>قريبًا على</span><b>Google Play</b></div>
 
 <div class="card" style="padding-inline:0;overflow:hidden"><h2 style="padding-inline:20px">صور من التطبيق</h2><div class="shots">
 <figure><div class="ph"><img src="shot1.webp" alt="الرئيسية" loading="lazy"></div><figcaption>فانوس ادخار يمتلئ بالعملات</figcaption></figure>
@@ -111,62 +109,10 @@ h1::after{left:50%;margin-left:-20px}
 <figure><div class="ph"><img src="shot5.webp" alt="الحاسبة" loading="lazy"></div><figcaption>آلة حاسبة مدمجة وأنيقة</figcaption></figure>
 <figure><div class="ph"><img src="shot6.webp" alt="الإعدادات" loading="lazy"></div><figcaption>عربي وإنجليزي وإعدادات كاملة</figcaption></figure>
 </div></div>
-<div class="card" style="margin-top:18px"><h2>إذا تم التنزيل ولم يُفتح الملف؟</h2><ul><li>أغلق الصفحة وافتح متصفح <b>Chrome</b>.</li><li>اختر <b>التنزيلات</b> (Downloads) من القائمة.</li><li>اضغط على ملف <b>hassalaty.apk</b> وأكمل التثبيت.</li></ul></div>
 <div class="card"><h2>المميزات</h2><div class="feats"><div class="ft"><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 4h12v3l-2 2v3l2 2v3H6v-3l2-2V9L6 7z"/><path d="M12 2v2"/></svg></span><span>فانوس ادخار يمتلئ بالعملات كلما زاد رصيدك</span></div><div class="ft"><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2"/></svg></span><span>أهداف وحصّالات متعددة وتحديات ادخار</span></div><div class="ft"><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 20V10M12 20V4M19 20v-7"/></svg></span><span>ميزانيات وإحصائيات وبطاقة ملخّص الشهر</span></div><div class="ft"><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20v-7a8 8 0 0 1 16 0v7M2 20h20M12 2v2M9.5 20v-4a2.5 2.5 0 0 1 5 0v4"/></svg></span><span>أذكار وصدقة وحاسبة زكاة</span></div><div class="ft"><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="11" width="14" height="9" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg></span><span>رمز سري وبصمة إصبع، ونسخة احتياطية</span></div><div class="ft"><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg></span><span>عربي وإنجليزي، ويعمل دون إنترنت</span></div></div></div>
 
-<div class="card"><h2>طريقة التثبيت</h2><ol class="steps">
-<li>اضغط زر التحميل وانتظر انتهاء تنزيل الملف.</li>
-<li>افتح الملف، وإن ظهرت رسالة، فاسمح بالتثبيت من هذا المصدر.</li>
-<li>اضغط تثبيت ثم افتح التطبيق.</li></ol>
-<p style="color:var(--mut);font-size:14px;margin:10px 0 0">عند التحديث، ثبّت النسخة الجديدة فوق القديمة، وأنشئ نسخة احتياطية من الإعدادات قبل ذلك.</p></div>
 <div class="card sup"><h2>الدعم</h2><p>للملاحظات أو الإبلاغ عن مشكلة، تواصل معنا.</p><div class="sb"><a class="sl" href="https://t.me/hassalaty" id="tg"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.5 4.3 2.9 11.4c-.9.4-.9 1.1-.2 1.3l4.7 1.5 1.8 5.6c.2.6.4.8.8.8s.6-.2.9-.5l2.3-2.2 4.7 3.5c.9.5 1.5.2 1.7-.8l3.1-14.700c.3-1.200-.4-1.700-1.200-1.600zM8.800 13.500l9.900-6.200c.5-.3.9-.1.500.2l-8.100 7.300-.3 3.400z"/></svg><span>تلجرام</span></a><a class="sl" href="https://x.com/MazenTechX" id="x"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.8 3h3.1l-6.800 7.800L22 21h-6.200l-4.900-6.400L5.300 21H2.200l7.300-8.300L2 3h6.400l4.400 5.800zm-1.100 16.200h1.700L7.400 4.700H5.600z"/></svg><span>X</span></a></div></div>
-<div class="wn-ov" id="wnov" hidden role="dialog" aria-modal="true" aria-labelledby="wnt"><div class="wn-card"><button class="wn-x" id="wnx" type="button" aria-label="إغلاق"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
-<h2 id="wnt">ما الجديد في الإصدار 2.1</h2>
-<ul>
-<li>شاشة ترحيب تطلب اسمك، وتحية باسمك أعلى الشاشة الرئيسية</li>
-<li>عملات حقيقية داخل الفانوس تتحرك وتتكوّم فوق بعضها</li>
-<li>زر الحاسبة يختبئ على الجانب بعد ثوانٍ، ويظهر عند لمسه</li>
-<li>تصميم جديد وأنيق للآلة الحاسبة</li>
-<li>زر إغلاق (X) في كل نافذة وصفحة</li>
-<li>حركة رجوع جديدة وسلسة</li>
-<li>سجل العمليات بتصميم جديد، وأزرار سحب أجمل للتعديل والحذف</li>
-<li>الإنجازات على شكل ميداليات مع عدّاد للتقدّم</li>
-<li>الوضع الفاتح بلون هادئ أريح للعين</li>
-<li>شريط الصلاة على النبي بخط أجمل</li>
-<li>تحسينات عامة على شكل الكروت والأزرار والإعدادات</li>
-<li>واجهة بالعربية الفصحى وجولة تعريفية أقصر وأسرع</li>
-</ul>
-<p class="wn-n">عند التحديث، ثبّت النسخة الجديدة فوق القديمة، وأنشئ نسخة احتياطية من الإعدادات قبل ذلك.</p></div></div>
-<footer>طُوِّر بواسطة Mazen</footer>
 </main>
 <script>
-(function(){var o=document.getElementById('wnov');function op(){o.hidden=false;document.body.style.overflow='hidden';document.getElementById('theme').style.visibility='hidden'}function cl(){o.hidden=true;document.body.style.overflow='';document.getElementById('theme').style.visibility=''}
-document.getElementById('wn').onclick=op;document.getElementById('wnx').onclick=cl;o.addEventListener('click',function(e){if(e.target===o)cl()});document.addEventListener('keydown',function(e){if(e.key==='Escape')cl()})})();
 document.getElementById('theme').onclick=function(){var d=document.documentElement,n=d.getAttribute('data-theme')==='light'?'dark':'light';d.setAttribute('data-theme',n);try{localStorage.setItem('hs_theme',n)}catch(e){}};
-fetch('hassalaty.apk',{method:'HEAD'}).then(function(r){
- if(!r.ok)return;var s=r.headers.get('content-length'),m=r.headers.get('last-modified'),p=['الإصدار 2.1'];
- if(m){var dt=new Date(m);p.push('آخر تحديث: '+dt.toLocaleDateString('ar-EG',{year:'numeric',month:'long',day:'numeric'})+'، '+dt.toLocaleTimeString('ar-EG',{hour:'numeric',minute:'2-digit',hour12:true}))}
- if(s)p.push('الحجم: '+(s/1048576).toFixed(1)+' ميجا');
- if(p.length)document.getElementById('meta').textContent=p.join(' · ');
-}).catch(function(){});
-
-(function(){
- var ua=navigator.userAgent||'';
- var inapp=/Twitter|FBAN|FBAV|FB_IAB|Instagram|Line\/|Snapchat|TikTok|musical_ly|BytedanceWebview|LinkedInApp|Pinterest|Telegram|WhatsApp|GSA\/|Messenger|MicroMessenger|; wv\)|Version\/[\d.]+ Chrome/i.test(ua);
- var url=location.href.split('#')[0];
- if(inapp){document.getElementById('inapp').style.display='block'}
- var c=document.getElementById('chrome');
- c.href='intent://'+url.replace(/^https?:\/\//,'')+'#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url='+encodeURIComponent(url)+';end';
- document.getElementById('chrome').addEventListener('click',function(){
-  var m=document.getElementById('cpmsg');
-  setTimeout(function(){if(document.visibilityState==='visible'){
-   try{navigator.clipboard.writeText(url)}catch(e){}
-   m.innerHTML='لم يُفتح Chrome لأن التطبيق منعه. <b>تم نسخ الرابط</b>: افتح Chrome يدويًا والصقه في شريط العنوان، أو نزّل من تلجرام.';m.style.color='var(--gold)'}},1400)});
- document.getElementById('copy').onclick=function(){var b=this;
-  function ok(){b.textContent='تم النسخ'}
-  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(url).then(ok,function(){prompt('انسخ الرابط',url)})}
-  else{prompt('انسخ الرابط',url)}};
- document.getElementById('dl').addEventListener('click',function(){
-  if(inapp){document.getElementById('inapp').scrollIntoView({behavior:'smooth',block:'center'})}});
-})();
 </script></body></html>
